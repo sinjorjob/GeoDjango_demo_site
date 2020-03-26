@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GeodjangoDemoSite</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Geodjango Demo Site</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">ホーム</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">このサイトについて</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">構成要素</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#function">機能概要</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#map">避難所MAP</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">GeoDjango Demo Site</h1>
+      <h3 class="mb-5">
+        <em>Shelter map site using Geodjango</em>
+      </h3>
+     
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>GeoDjangoを用いた避難所マップのデモサイトです。</h2>
+          <p class="lead mb-5">This is a demo site for a shelter map using GeoDjango.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger w-170px" href="#services">構成要素</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger w-170px" href="#function">機能概要</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger w-170px" href="#map">避難所MAP</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 class="mb-5">構成要素</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+          <h4>
+            <strong>Django</strong>
+          </h4>
+          <p class="text-faded mb-0">Djangoバージョン3.x</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-database"></i>
+          </span>
+          <h4>
+            <strong>PostgreSQL & <br>PostGis</strong>
+          </h4>
+          <p class="text-faded mb-0">PostgreSQL10+PostGis2.4</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fab fa-google"></i>
+          </span>
+          <h4>
+            <strong>Google Map API</strong>
+          </h4>
+          <p class="text-faded mb-0">
+            Directions API<br>
+            Maps Elevation API<br>
+            Maps JavaScript API</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fab fa-aws"></i>
+          </span>
+          <h4>
+            <strong>AWS</strong>
+          </h4>
+          <p class="text-faded mb-0">EC2<br>Ubuntu18.04<br>Nnginx<br>Gunicorn</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section class="content-section" id="function">
+    <div class="container">
+      <div class="content-section-heading text-center">
+       <!-- <h3 class="text-secondary mb-0">Portfolio</h3>-->
+        <h2 class="mb-5">機能概要</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>現在地を自動取得</h2>
+                <p>Geolocation API で現在の位置情報を取得してGoogleMapにマーカーを表示します。</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>避難所をマッピング</h2>
+                <p>G空間情報センターで公開されている指定緊急避難場所をGoogleMapにマーカー表示します。
+                </p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>最短経路の表示</h2>
+                <p class="mb-0">避難所のマーカーをクリックすると現在地からの最短経路を表示します。</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>移動距離の表示</h2>
+                <p class="mb-0">最短経路と合わせて移動距離(メートル)を表示します。</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Map -->
+
+
+  <section class="content-section" id="map">
+    <div class="container">
+      <div class="content-section-heading text-center">
+       <!-- <h3 class="text-secondary mb-0">Portfolio</h3>-->
+        <h2 class="mb-5">避難所MAP</h2>
+      </div>
+
+
+
+  <section id="contact" class="map">
+
+
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small>
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+    </small>
+  </section>
+
+</div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="#">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
